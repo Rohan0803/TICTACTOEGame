@@ -1,0 +1,167 @@
+/* img {
+    width: 30px;
+}
+
+#cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn {
+    font-size: 2rem;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 0;
+    background-color: rgb(206, 203, 203);
+    border-radius: 10px;
+} */
+
+/* Set the background color and font family for the game */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the game title */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+/* Style the container for user and opponent names */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style the name text */
+p {
+    font-size: 1.5em;
+    margin: 0;
+    padding-right: 10px;
+    text-align: center;
+}
+
+/* Style the value container */
+#valueCont {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Style the enter name text */
+#EnterName {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 30px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Style the name input */
+#name {
+    font-size: 1.2em;
+    padding: 5px;
+    margin-left: 10px;
+    display: block;
+}
+
+
+/* Style the find button */
+#find {
+    font-size: 1.2em;
+    padding: 5px 20px;
+    /* margin-left: 10px; */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto auto;
+
+}
+
+/* Style the loading image */
+#loading {
+
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Show the loading image when the button is clicked */
+#find:active+#loading {
+    display: inline-block;
+}
+
+/* Style the game board container */
+#bigcont {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Style the game board */
+#cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+/* Style the game board buttons */
+.btn {
+    font-size: 2.5em;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Change button color on hover */
+.btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Change button color on active */
+.btn:active {
+    background-color: #0056b3;
+    color: white;
+}
+
+#userCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#user {
+    margin-right: 10px;
+}
+
+#OppNameCont {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#oppName {
+    margin-left: 10px;
+    order: -1;
+}
